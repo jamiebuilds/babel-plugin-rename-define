@@ -3,9 +3,9 @@ export default function(name) {
   return function ({ Plugin, types: t }) {
     return new Plugin("rename-define", {
       visitor: {
-        Identifier(node) {
-          if (node.name === "define") {
-            node.name = name;
+        CallExpression(node, parent, scope){
+          if (t.isIdentifier(node.callee, {name: 'define'}) && !scope.hasBinding('define')) {
+            node.callee = t.identifier(name);
           }
         }
       }
