@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-rename-define",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rename define()",
   "repository": "thejameskyle/babel-plugin-rename-define",
   "license": "MIT",
