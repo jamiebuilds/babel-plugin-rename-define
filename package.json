@@ -1,0 +1,20 @@
+{
+  "name": "babel-plugin-rename-define",
+  "version": "1.0.0",
+  "description": "Rename define()",
+  "repository": "thejameskyle/babel-plugin-rename-define",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "babel": "^5.6.0",
+    "mocha": "^2.2.5"
+  },
+  "scripts": {
+    "build": "babel-plugin build",
+    "push": "babel-plugin publish",
+    "test": "mocha --compilers js:babel/register"
+  },
+  "keywords": [
+    "babel-plugin"
+  ]
+}
